@@ -1,0 +1,36 @@
+-- PASSO 1
+Tenho um projeto chamado api-convivencia-operacoes que foi desenvolvido em java/kotlin com maven. O projeto esta em producao e comtempla mais de 100 classes.
+Rodei o comando/prompt abaixo no plugion do chatgpt (modo agente) com objetivo de avaliar a api sobre alguns aspectos tecnicos. 
+
+Prompt: 
+"Esta aplicação é feita com a linguagem Java Kotlin. 
+Listar as melhorias encontradas de arquitetura de software considerando boas práticas do SOLID e se a Arquitetura Hexagonal está aplicada corretamente. 
+Listar todos os pontos que estão com falta de retry e outros requisitos de resiliencia como circuitbreaker, fallback , timeout e acrescentar as sugestões de correção. 
+Sugira melhorias de performance e eficiência sem alterar regras de negócio e sem adicionar recursos de infra. 
+Todas sugestões de alteração não devem afetar as regras existentes na aplicação. 
+Após as correções sugeridas implementadas o projeto deve buildar e startar sem erros."
+
+Como resultado foi gerado o arquivo MELHORIAS_ARQUITETURA_RESILIENCIA.md contendo a analise feita pelo agente.
+
+-- PASSO 2
+
+Apos isso, mandei o seguinte prompt:
+"Implemente as alteraçoes sugeridas no arquivo."
+
+Como resultado foi gerado os dois seguintes arquivos: IMPLEMENTACOES_REALIZADAS.md e arquivo RESUMO_EXECUTIVO.md
+
+
+-- PASSO 3
+
+Apos isso, mandei o comando: mvn clean install e para minha supresa o projeto buildou com sucesso e comtemplando as novas alteracoes sugeridas.
+
+
+O que preciso agora:
+Como base na nos 3 passos acima. analise os mencionados arquivos em anexo.  
+Preciso montar uma apresentacao power point (gere para mim um arquivo *.ppt) para o time de desenvolvedores e gestores. 
+O Objetivo dessa apresentacao é mostrar os beneficios do uso da IA ( plugin do Agente do git copilot) na analise e resolucao de possiveis desvios no desenvolvimento de um software. 
+Você deve se basear nos arquivos de template em anexo ((Template_slide_ppt_*.jpg) para gerar a apresentação(slides do arquivo ppt) .
+Sera uma apresentacao de uns 20 minutos entao considere a quantidade de slides necessarias.
+Crie um story telling que foque mais nos beneficios do resultado gerado. 
+exemplo: mostre a vantagem do tempo ganho e de com um prompt nao precisar ser especialista para analisar muitas classes etc..
+Finalize dizendo que o desenvolvedor precisa validar o resultado gerado, que a ia serve como um facilitador porem a responsabilidade de testar e revisar o codigo gerado é do desenvolvedor.
